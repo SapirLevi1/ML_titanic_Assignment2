@@ -9,29 +9,53 @@ The Jupyter notebook (Assignment2_supervised_learning_flow.ipynb) includes the f
 # Introduction
 
 Dataset: Titanic passengers data (train and test)
+
 Task type: Classification (binary – survived or not)
+
 Evaluation metric: F1 Score (macro average)
+
 Data Preparation & EDA
+
 Loaded both train and test datasets (without re-splitting)
+
 Displayed head of each set
+
 Visualized distributions and relationships of features such as Age, Sex, Class and Survival using seaborn and matplotlib
+
 Discussed data imbalance and correlations
+
 Feature Engineering
+
 Created new features: FamilySize, IsAlone, AgeBin, FareBin
+
 Dropped unnecessary columns (e.g. Name, Ticket, Cabin)
+
 Imputed missing values and applied transformations consistently to both train and test
+
 Applied preprocessing pipeline with ColumnTransformer, StandardScaler, and OneHotEncoder
+
 Model Training & Cross-Validation
+
 Tested three models: Decision Tree, K-Nearest Neighbors, and Naive Bayes
+
 Performed hyperparameter tuning with GridSearchCV using 5-fold stratified cross-validation
+
 Chose the best model and hyperparameters based on macro-F1 score
+
 Displayed a summary table comparing the models’ performance
+
 Final Training & Test Evaluation
+
 Re-trained the best model on the entire training data
+
 Evaluated on the test set
+
 Displayed the first 5 predictions
+
 Reported classification metrics (precision, recall, F1) on test
+
 Compared performance on train and test sets to evaluate overfitting
+
 Plotted confusion matrices for both train and test sets
 
 # Bonus
